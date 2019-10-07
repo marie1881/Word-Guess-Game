@@ -21,44 +21,87 @@ h2 {
 
 header {
     
-    font-size: 35px;
+    font-size: 60px;
     letter-spacing: 5px;
     font-family: 'Racing Sans One', cursive;
     text-align: center;
     margin: 15px auto;
-    
+    margin-bottom: 20px;
     height: 100px;
     width: 80%;
     /* background: url(../images/spectrum-dark-grey.jpg); */
     
-    
-    
+       
+}
+
+.gifs {
+    border: 2px solid black;
+    font-size: 25px;
+    text-align: center;
+    margin: 0px auto;
+    height: 100px;
+    width: 50%;
+    color: white;
+    background: black;
+    font-family: 'Racing Sans One', cursive;
 }
 
 .underscore {
     border: 2px solid black;
-    font-size: 100px;
+    font-size: 90px;
     text-align: center;
-    margin: 15px auto;
-    height: 200px;
+    margin: 0px auto;
+    height: 150px;
     width: 50%;
-    background: url(../images/spectrum-dark-grey.jpg);
+    color: white;
+    background: black;
 }
 
 .rightGuess {
     border: 2px solid black;
     font-size: 25px;
     text-align: center;
-    margin: 15px auto;
-    height: 200px;
+    margin: 0px auto;
+    height: 100px;
     width: 50%;
+    font-family: 'Racing Sans One', cursive;
+    color: white;
+    background: black;
+   
 }
 
 .wrongGuess {
     border: 2px solid black;
     font-size: 25px;
     text-align: center;
-    margin: 15px auto;
-    height: 200px;
+    margin: 0px auto;
+    height: 100px;
     width: 50%;
+    color: white;
+    background: black;
+    font-family: 'Racing Sans One', cursive;
+}
+
+.guessRemain {
+    border: 2px solid black;
+    font-size: 25px;
+    text-align: center;
+    margin: 0px auto;
+    height: 100px;
+    width: 50%;
+    color: white;
+    background: black;
+    font-family: 'Racing Sans One', cursive;
+}
+
+.letterGuess {
+    border: 2px solid black;
+    font-size: 25px;
+    text-align: center;
+    margin: 0px auto;
+    height: 100px;
+    width: 50%;
+    color: white;
+    background: black;
+    font-family: 'Racing Sans One', cursive;
 }
