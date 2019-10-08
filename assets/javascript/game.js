@@ -1,8 +1,8 @@
-// Array of words - charcters from the marvel universe
+// Array of words - characters from the marvel universe
 const marvelCharcters = ['spiderman', 'ironman', 'hulk', 'captainmarvel', 'thanos', 'blackpanther', 'captainamerica', 'blackwidow', 'hawkeye', 'thor', 'starlord', 'rocket', 'groot'];
 // Word selected randomly
 
-//Empty variables to store values later
+//Empty variables 
 var randomWord = "";
 var lettersOfWord = []
 var blanks = 0;
@@ -130,6 +130,7 @@ function checkLetters(letter) {
     else {
         wrongGuess.push(letter);
         guessesRemaining--;
+        document.getElementById("playerguesses").innerHTML = wrongGuess;
     }
     console.log(blanksAndCorrect);
 }
@@ -160,7 +161,7 @@ function complete() {
 }
 
 
-//Start game function
+//Start game 
 Game()
 
 //check for keyup, and convert to lowercase then store in guesses
@@ -173,6 +174,7 @@ document.onkeyup = function (event) {
     //store player guess in console for reference 
     console.log(guesses);
 
-    //display/store incorrect letters on screen
-    document.getElementById("playerguesses").innerHTML = "  " + wrongGuess.join(" ");
-}
+     //display/store incorrect letters on screen
+     document.getElementById("playerguesses").innerHTML = "  " + wrongGuess.join(" ");
+    }
+    
