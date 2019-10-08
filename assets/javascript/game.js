@@ -15,14 +15,7 @@ var losses = 0;
 var guessesRemaining = 9;
 
 
-
-// ALL FUNCTIONS
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
-//__________________________________________________________
-//GAME START FUNCTION
-//__________________________________________________________
+//GAME START 
 function Game() {
     //computer generates random word from words array
     randomWord = marvelCharcters[Math.floor(Math.random() * marvelCharcters.length)];
@@ -49,27 +42,11 @@ function Game() {
 }
 
 
-var spiderman = document.getElementById("spiderman");
-var ironman = document.getElementById("ironman");
-var hulk = document.getElementById("hulk");
-var captainmarvel = document.getElementById("captainmarvel");
-var thanos = document.getElementById("thanos");
-var blackpanther = document.getElementById("blackpanther");
-var captainamerica = document.getElementById("captainamerica");
-var blackwidow = document.getElementById("blackwidow");
-var hawkeye = document.getElementById("hawkeye");
-var thor = document.getElementById("thor");
-var starlord = document.getElementById("starlord");
-var rocket = document.getElementById("rocket");
-var groot = document.getElementById("groot");
-
-
-
-function gif() {
+function img() {
    
 }
     if (randomWord === marvelCharcters[0]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/spiderman.gif";
+        document.getElementById("image").src="../Word-Guess-Game/assets/images/spiderman.gif"
         
     }
     
@@ -165,7 +142,7 @@ function complete() {
     //if WON...then alert, play audio, display image and reset new round
     if (lettersOfWord.toString() == blanksAndCorrect.toString()) {
         wins++;
-        gif()
+        img()
         reset()
         //display wins on screen
         document.getElementById("winstracker").innerHTML = " " + wins;
@@ -174,7 +151,7 @@ function complete() {
     } else if (guessesRemaining === 0) {
         losses++;
         reset()
-        document.getElementById("image").src = "./assets/images/try-again.png"
+        document.getElementById("image").src = "../Word-Guess-Game/assets/images/press any.gif";
         document.getElementById("losstracker").innerHTML = " " + losses;
     }
     //display losses on screen && guesses remaining countdown
@@ -183,12 +160,7 @@ function complete() {
 }
 
 
-//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-//_____________________________________________________
-// EXECUTE CODE 
-//_____________________________________________________
-
-//call start game function
+//Start game function
 Game()
 
 //check for keyup, and convert to lowercase then store in guesses
