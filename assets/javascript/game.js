@@ -43,63 +43,34 @@ function Game() {
 
 
 function img() {
-   
-}
     if (randomWord === marvelCharcters[0]) {
-        document.getElementById("image").src="../Word-Guess-Game/assets/images/spiderman.gif"
-        
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/spiderman.gif';
+    } else if (randomWord === marvelCharcters[1]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/ironman.gif';
+    } else if (randomWord === marvelCharcters[2]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/hulk.gif';
+    } else if (randomWord === marvelCharcters[3]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/marvel.gif';
+    } else if (randomWord === marvelCharcters[4]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/thanos.gif';
+    } else if (randomWord === marvelCharcters[5]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/panther.gif';
+    } else if (randomWord === marvelCharcters[6]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/america.gif';
+    } else if (randomWord === marvelCharcters[7]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/widow.gif';
+    } else if (randomWord === marvelCharcters[8]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/hawkeye.gif';
+    } else if (randomWord === marvelCharcters[9]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/thor.gif';
+    } else if (randomWord === marvelCharcters[10]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/starlord.gif';
+    } else if (randomWord === marvelCharcters[11]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/rocket.gif';
+    } else if (randomWord === marvelCharcters[12]) {
+      document.getElementById('image').src = 'Word-Guess-Game/assets/images/groot.gif';
     }
-    
-
-    else if (randomWord === marvelCharcters[1]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/ironman.gif";
-    }
-    
-
-    else if (randomWord === marvelCharcters[2]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/hulk.gif";
-    }
-    
-    else if (randomWord === marvelCharcters[3]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/marvel.gif";
-    }
-    
-    else if (randomWord === marvelCharcters[4]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/thanos.gif";
-    }
-    
-    else if (randomWord === marvelCharcters[5]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/panther.gif";
-    }
-    
-    else if (randomWord === marvelCharcters[6]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/america.gif";
-    }
-
-    else if (randomWord === marvelCharcters[7]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/widow.gif";
-    }
-
-    else if (randomWord === marvelCharcters[8]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/hawkeye.gif";
-    }
-
-    else if (randomWord === marvelCharcters[9]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/thor.gif";
-    }
-
-    else if (randomWord === marvelCharcters[10]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/starlord.gif";
-    }
-
-    else if (randomWord === marvelCharcters[11]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/rocket.gif";
-    }
-
-    else if (randomWord === marvelCharcters[12]) {
-        document.getElementById("image").src = "../Word-Guess-Game/assets/images/groot.gif";
-    }
-;
+  }
 
 
 function reset() {
